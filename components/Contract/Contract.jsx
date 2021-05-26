@@ -33,14 +33,13 @@ const Contract = ({ contract }) => {
                 const fetchedFUSD = await GetTokenDetails(FUSE_DOLLAR);
                 setFuseDollar(fetchedFUSD.totalSupply);
             } catch (error) {
-                
+                console.log(error);
             }
         }
     }, [contract])
     const loaded = () => {
         return (
             <Paper variant="outlined" square className={styles.contractItem} color="darkblue" elevation={3} >
-            {contract.name}
                 <h3>Total Supply</h3>
                 {totalSupply} <br />
                 <hr className={styles.hr___contract} />
@@ -70,7 +69,7 @@ const Contract = ({ contract }) => {
     }
     return (
         <div className={styles.contract}>
-            <h1>Contract</h1>
+            <span className={styles.contractTitle}>Contract</span>
             {!(_.isEmpty(contract)) ? loaded() : <CircularProgress />}
         </div>
     )
