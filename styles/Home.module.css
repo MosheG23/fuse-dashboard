@@ -1,0 +1,22 @@
+.root {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container { 
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.title {
+  color: rgb(218, 218, 218); 
+  font-family: 'Open Sans Condensed', sans-serif; 
+  font-size: 64px; 
+  text-transform: uppercase;
+}
+
+.title:hover {
+  border-right: 3px dashed #b4b4b4; 
+  border-left: 3px dashed #b4b4b4;
+}

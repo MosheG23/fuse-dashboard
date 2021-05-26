@@ -1,0 +1,79 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 8px 0px;
+}
+
+.companyName {
+    display: flex;
+    align-items: center;
+}
+
+.logoText {
+    margin-left: 12px;
+    font-size: clamp(1rem, 6vw, 2rem);
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.companyText {
+    color: #c9faad;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.usefulLink___dropdown {
+    position: absolute;
+    cursor: default;
+    font-size: 0.8rem;
+    top: 38px;
+    width: 100px;
+    transform: translateX(-41%);
+    background: white;
+    border: 1px solid black;
+    padding: 0.5rem;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.usefulLink___menuItem {
+    height: 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background var(--speed);
+    padding: 0.1rem 0px;
+    font-family: 'Secular One', sans-serif;
+}
+
+.usefulLink___link {
+    margin-left: 4px;
+}
+
+.usefulLink___menuItem:hover {
+    background: #48B;
+    color: white;
+}
+
+.usefulLink___icon {
+    width: calc(48px) *0.7;
+    height: calc(48px) *0.7;
+    background-color: #a5a5a5;
+    border-radius: 50%;
+    padding: 6px;
+    margin-left: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: filter 300ms;
+}
+
+.icon-usefulLink___icon:hover {
+    filter: brightness(1.8);
+}

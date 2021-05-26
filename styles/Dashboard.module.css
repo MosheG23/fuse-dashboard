@@ -1,0 +1,39 @@
+.basicData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.userItem {
+    max-height: 200px;
+    min-height: 200px;
+    padding: 1rem 0.5rem;
+    border: 3px solid #fff;
+    border-radius: 1rem;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.contractItem {
+    max-height: 22em;
+    min-height: 22em;
+    padding: 1rem 0.5rem;
+    border: 3px solid #fff;
+    border-radius: 1rem;
+    box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+.contract { 
+    margin-top: 2em;
+}
+
+.hr___contract {
+	background-color: #fff;
+	border-top: 4px dashed #9a84ff;
+}
+
+.vl {
+    border-left: 4px dashed #9a84ff;
+    height: 200px;
+    position: relative;
+    left: 50%;
+}
