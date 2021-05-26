@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Web3 from 'web3'
 import _ from 'lodash'
+import { PieChart } from './index'
 
 import { GetTokenDetails } from '@/utils/FuseToken'
 import { fetchContract } from '@/utils/getWeb3'
@@ -60,6 +61,7 @@ const Contract = ({ contract }) => {
                     </Grid>
                     <Grid item xs={5}>
                         <h4>Chart</h4>
+                        {/* {!(_.isEmpty([fuseDollar, usdCoinPeg])) ? <PieChart values={[fuseDollar, usdCoinPeg]} labels={['Fuse Dollar', 'USD Coin on Fuse']} /> : <>Chart</>} */}
                     </Grid>
                 </Grid>
                 {/* Balance: {balance} <br/>

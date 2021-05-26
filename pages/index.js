@@ -38,23 +38,30 @@ export default function Home() {
   }
 
   return (
-    <div className={styles.root}>
-      <Head>
-        <title>fUSD - Dashboard</title>
-        <meta name="description" content="Fuse.io Challenge" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <div>
       <Header user={user} login={logIn} />
-      <div className={styles.container} >
-        <span className={styles.title} >fUSD - Dashboard</span>
-        <BasicData user={ user } token={ fuseToken } tokensInfo={ tokensInfo } />
-        <Contract contract={ contract } />
+      <div className={styles.root}>
+        <Head>
+          <title>fUSD - Dashboard</title>
+          <meta name="description" content="Fuse.io Challenge" />
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        {(_.isEmpty(user)) ? 
+          <span className={styles.title} >Please login using Metamask</span>
+          :
+          <div className={styles.container} >
+            <span className={styles.title} >fUSD - Dashboard</span>
+            <BasicData user={ user } token={ fuseToken } tokensInfo={ tokensInfo } />
+            <Contract contract={ contract } />
+          </div>
+        }
+        
+        {/* <Tooltip title="Login" placement="right-end">
+          <IconButton aria-label="login">
+            <RiLoginCircleFill />
+          </IconButton>
+        </Tooltip> */}
       </div>
-      {/* <Tooltip title="Login" placement="right-end">
-        <IconButton aria-label="login">
-          <RiLoginCircleFill />
-        </IconButton>
-      </Tooltip> */}
     </div>
   )
 }
