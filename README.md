@@ -1,5 +1,7 @@
 # FUSE-Dashboard
 
+Need to have a MetaMask account in order to login
+
 ## About The Project
 
 [Challange page](https://www.notion.so/Fuse-Dollar-Dashboard-0ef85ea9269d41e1910a9d184767eaa6) <br />
